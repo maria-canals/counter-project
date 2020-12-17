@@ -22,11 +22,12 @@ function increment() {
 }
 
 function checkNumber() {
-    if(counter > 0) {
-        textCounter.style.color = 'green'
-    } else if (counter == 0) {
-        textCounter.style.color = 'black'
+    const deleteClassList = textCounter.classList.remove('red','green','black');
+    if(counter < 0) {
+        textCounter.classList.add('red');
+    } else if (counter > 0) {
+        textCounter.classList.add('green');
     } else {
-        textCounter.style.color = 'red'
+        textCounter.classList.add('black');
     }
 }

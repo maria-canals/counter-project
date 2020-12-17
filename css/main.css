@@ -34,4 +34,12 @@ body {
 .nextBtn:hover {
   background: var(--lightBlue);
 }
-
+#counter.green {
+  color: green;
+}
+#counter.black {
+  color: black;
+}
+#counter.red {
+  color: red;
+}
